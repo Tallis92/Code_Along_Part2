@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrering</title>
+</head>
+
+<body>
+    <form action="http://primat.se/services/sendform.aspx?xid=register&xmail=tim.tallis@hotmail.com" method="post">
+        <label for="namn">Ditt namn:</label>
+        <input type="text" id="namn" name="namn">
+        <br><br>
+        <label for="info">Berätta om dina förväntningar på kursen:</label>
+        <br>
+        <textarea id="info" rows="5" cols="80" name="info"></textarea>
+
+        <p>Välj maträtt</p>
+        <input type="radio" name="mat" id="kött" value="kött">
+        <label for="kött">Kött</label><br>
+
+        <input type="radio" name="mat" id="fisk" value="fisk">
+        <label for="fisk">Fisk</label><br>
+
+        <input type="radio" name="mat" id="vegetariskt" value="vegetariskt">
+        <label for="vegetariskt">Vegetariskt</label>
+        <br><br>
+
+        <input type="checkbox" id="nyhetsbrev" name="nyhetsbrev" value="ja">
+        <label for="nyhetsbrev1">Vill du ha nyhetsbrev?</label>
+        <input type="hidden" name="nyhetsbrev" value="nej">
+        <br><br>
+
+        <label for="registreringsdatum">Datum för registrering</label><br>
+        <input type="date" name="registreringsdatum"><br>
+        
+        <label for="antalbesökare">Ange antal besökare</label><br>
+        <input type="number" name="antalbesökare"><br>
+        <label for="tröjfärg">Ange färg på tröjan</label><br>
+        <input type="color" name="tröjfärg"><br>
+        
+
+        <input type="submit" value="Registrera dig!">
+    </form>
+</body>
+
+</html>
